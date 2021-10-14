@@ -1,0 +1,69 @@
+/* Fixing the response of clock face */
+
+#clockContainer {
+    position: relative;
+    height: 35vw;
+    width: 35vw;
+    background: url(clock.png) no-repeat;
+    background-size: 95%;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+@media (max-width: 500px) {
+    #clockContainer {
+        height: 80vw;
+        width: 80vw;
+    }
+    #hrs {
+        height: 0;
+        width: 0;
+        bottom: 60%;
+        right: 50.6%;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
+    #clockContainer {
+        height: 60vw;
+        width: 60vw;
+    }
+}
+
+
+/* targeting the hands */
+
+#hrs,
+#mins,
+#secs {
+    position: absolute;
+    background: #000;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+
+#hrs {
+    height: 28%;
+    width: 2%;
+    bottom: 53%;
+    right: 51.8%;
+}
+
+#mins {
+    height: 34%;
+    width: 1.4%;
+    bottom: 53%;
+    right: 51.8%;
+}
+
+#secs {
+    height: 38%;
+    width: 0.8%;
+    bottom: 53%;
+    right: 51.8%;
+}
+
+.text-center {
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+}
